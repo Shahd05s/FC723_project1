@@ -37,6 +37,8 @@ except ValueError: #print an error message if the user input is invalid
             
 
 
+def lcm(a,b):
+    return (a // find_GCD(a,b))* b
 
 
 

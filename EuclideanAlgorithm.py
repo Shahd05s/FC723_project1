@@ -25,7 +25,7 @@ try: # using try-except to deal with error if the user inputed somthing that is 
     num2 = int(input("Enter the second number: "))
 
     # Check if inputs are valid, positive
-    if num1 > 0 and num2 > 0:
+    if num1 >= 0 and num2 >= 0:
     # Calculate the GCD
         print(f"The GCD of {num1} and {num2} is: {find_GCD(num1, num2)}")
         
@@ -37,6 +37,8 @@ except ValueError: #print an error message if the user input is invalid
             
 
 
+def lcm(a,b):
+    return (a // find_GCD(a,b))* b
 
 
 
